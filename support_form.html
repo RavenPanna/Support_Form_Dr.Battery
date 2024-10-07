@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sent Confirmation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .checkmark {
+            width: 100px;
+            height: 100px;
+            border: 10px solid #4CAF50;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .checkmark::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            width: 20px;
+            height: 50px;
+            border: solid #4CAF50;
+            border-width: 0 6px 6px 0;
+            transform: rotate(45deg);
+        }
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="checkmark"></div>
+        <h1>Sent</h1>
+    </div>
+
+</body>
+</html>
